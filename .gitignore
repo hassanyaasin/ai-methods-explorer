@@ -41,3 +41,6 @@ var/
 .coverage
 htmlcov/
 venv/
+
+# Node modules
+node/*
