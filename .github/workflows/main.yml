@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd backend
-          pip install -r requirements.txt
+          pip install -r requirements
           pip install pytest
       - name: Run tests
         run: |
@@ -32,7 +32,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version : "v20.18.0."
+          node-version : "v20.18.0"
       - name: Install dependencies
         run: |
           cd frontend
