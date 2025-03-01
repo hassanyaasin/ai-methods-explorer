@@ -9,6 +9,8 @@ on:
 jobs:
   test-backend:
     runs-on: ubuntu-latest
+    env: 
+      HF_API_KEY: ${{ secrets.HF_API_KEY }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
